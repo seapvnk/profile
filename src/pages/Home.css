@@ -18,6 +18,12 @@
     margin-bottom: 1rem;
 }
 
+@media screen and (max-width: 890px) {
+    .home h2 {
+        font-size: 1.4rem;
+    }
+}
+
 .home .description {
     margin-top: 1rem;
     font-size: 1.1rem;

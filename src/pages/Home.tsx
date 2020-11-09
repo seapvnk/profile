@@ -16,7 +16,7 @@ function Home() {
                 alt=""
             />
             <h1>Pedro Sérgio</h1>
-            <h2>~ desenvolvedor full-stack 🧑‍💻 💻</h2>
+            <h2>~ desenvolvedor full-stack ☕💻</h2>
             
             <div className="description md">
                 <p>✨ idade: <div className="value">{ age } anos</div></p>
