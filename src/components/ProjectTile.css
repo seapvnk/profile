@@ -1,0 +1,51 @@
+.project-tile {
+    border: 1px solid rebeccapurple;
+    width: 100%;
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+}
+
+.project-tile h4 a {
+    color: inherit;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.project-tile .description {
+    color: #777777;
+    font-size: 1.2rem;
+}
+
+.project-tile h4 a:hover {
+    color: inherit;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: rebeccapurple;
+}
+
+.project-tile .stack {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-tile .tech {
+    display: flex;
+    align-items: center;
+
+    margin: 5px;
+
+    font-size: 1rem;
+}
+
+.project-tile .tech .tech-circle {
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+
+    background-color: #555;
+
+    margin-right: 5px;
+}
