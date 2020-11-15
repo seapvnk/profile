@@ -5,7 +5,7 @@
   --mute-color: #C37289;
   --bold-text: #DD3745;
   --nav-item-color: #fff6f6;
-  --border-color: #ee6a7c;
+  --border-color: #DD3745;
 }
 
 .App[data-theme='dark'] {
