@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navigation from './components/Navigation';
-import Home from './pages/Home';
 import Routes from './routes';
 
 function App() {
+
+  const [darkMode, setDarkMode] = useState(true); 
+
   return (
-    <div className="App">
-      <Navigation />
+    <div className="App" data-theme={darkMode? 'dark': ''}>
+      <Navigation toggleDarkMode={setDarkMode} inDarkMode={darkMode} />
       <main className="content">
         <Routes />
       </main>

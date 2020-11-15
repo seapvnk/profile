@@ -1,5 +1,5 @@
 .project-tile {
-    border: 1px solid rebeccapurple;
+    border: 1px solid var(--border-color);
     width: 100%;
     padding: .5rem 1rem;
     margin-bottom: 1rem;
@@ -7,14 +7,14 @@
 }
 
 .project-tile h4 a {
-    color: inherit;
+    color: var(--border-color);
     font-size: 1.6rem;
     text-decoration: none;
     transition: .2s;
 }
 
 .project-tile .description {
-    color: #777777;
+    color: var(--mute-color);
     font-size: 1.2rem;
 }
 
@@ -22,7 +22,7 @@
     color: inherit;
     font-size: 1.6rem;
     text-decoration: none;
-    color: rebeccapurple;
+    color: var(--bold-text);
 }
 
 .project-tile .stack {

@@ -16,13 +16,25 @@ aside.navigation .icon {
 
     position: absolute;
     left: 0;
-    right: 0;
     z-index: 2;
     
     width: fit-content;
 
-    color: var(--default-font-color);
+    color: var(--bold-text);
 }
+
+aside.navigation .icon-2 {
+    font-size: 2.4rem;
+
+    position: absolute;
+    left: 90vw;
+    z-index: 2;
+    
+    width: fit-content;
+
+    color: var(--bold-text);
+}
+
 
 aside.navigation .content {
     padding-top: 2rem;
@@ -41,7 +53,7 @@ aside.navigation .content a {
     text-decoration: none;
     font-size: 1.6rem;
 
-    color: var(--background-color);
+    color: var(--nav-item-color);
     
     padding: 10px 5px;
     padding-left: 1rem;

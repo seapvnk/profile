@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
 
-import { RiMenuFill, RiCloseLine, RiFolder2Fill } from 'react-icons/ri';
-import { BsChevronRight, BsChevronDown } from 'react-icons/bs';
-import { DiMarkdown } from 'react-icons/di';
+import { RiMenuFill, RiCloseLine, RiSunCloudyFill, RiMoonClearFill } from 'react-icons/ri';
+import { BsChevronRight, BsChevronDown, BsSun, BsMoon } from 'react-icons/bs';
 
 import './Navigation.css';
 import { Link } from 'react-router-dom';
 
-function Navigation() {
+interface NavigationProps {
+    toggleDarkMode: Function;
+    inDarkMode:  boolean;
+}
+
+const Navigation: React.FC<NavigationProps> = ({ toggleDarkMode, inDarkMode }) => {
     const [open, setOpen] = useState(window.innerWidth > 895);
 
-    const [folderSkillsOpen, setFolderSkillsOpen] = useState(true);
-    const [folderAboutOpen, setFolderAboutOpen] = useState(true);
+    const [folderSkillsOpen, setFolderSkillsOpen] = useState(false);
+    const [folderAboutOpen, setFolderAboutOpen] = useState(false);
 
     const toggle = () => setOpen(!open);
     
@@ -20,10 +24,17 @@ function Navigation() {
 
     const toggleIfNavigateOnMobile = () => !(window.innerWidth > 895) && setOpen(!open);
 
+    function toggleTheme() {
+        toggleDarkMode(!inDarkMode)
+    }
+
     return (
      <aside className={`navigation ${open? '' : 'closed'}`}>
         <div className="icon" onClick={toggle}>
             { open? <RiCloseLine /> : <RiMenuFill /> }
+        </div>
+        <div className="icon-2" onClick={toggleTheme}>
+            { inDarkMode? <RiMoonClearFill /> : <RiSunCloudyFill /> }
         </div>
         <div className={`content ${open? '' : 'hidden'}`}>
             <Link onClick={toggleIfNavigateOnMobile} to="/"> home</Link>
@@ -43,6 +54,7 @@ function Navigation() {
                 <Link onClick={toggleIfNavigateOnMobile} to="skills"> habilidades</Link>
                 <Link onClick={toggleIfNavigateOnMobile} to="projects"> projetos</Link>
             </div>
+            <Link to="/blog"> blog</Link>
         </div>
      </aside>   
     )

@@ -5,6 +5,7 @@
 
 .home h1 {
     margin-top: 4rem;
+    color: var(--default-font-color);
     letter-spacing: 5px;
 }
 
@@ -12,10 +13,14 @@
 .home h1::after { content: " ]";}
 
 .home h2 {
-    color: #323233;
+    color: var(--default-font-color);
     margin: 0;
     margin-top: 10px;
     margin-bottom: 1rem;
+}
+
+.home p {
+    color: var(--default-font-color);
 }
 
 @media screen and (max-width: 890px) {
@@ -31,6 +36,6 @@
 
 .value {
     display: inline;
-    color: #000000;
+    color: var(--bold-text);
     font-weight: bold;
 }
