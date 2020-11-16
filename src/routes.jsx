@@ -17,7 +17,6 @@ function Routes() {
             <Route path="/contact" component={Contact}/>
             <Route path="/projects" component={Projects}/>
             <Route path="/skills" component={Skills}/>
-            <Route path="/blog" component={Blog} />
         </Switch>
     )
 } 

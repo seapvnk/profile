@@ -54,7 +54,6 @@ const Navigation: React.FC<NavigationProps> = ({ toggleDarkMode, inDarkMode }) =
                 <Link onClick={toggleIfNavigateOnMobile} to="skills"> habilidades</Link>
                 <Link onClick={toggleIfNavigateOnMobile} to="projects"> projetos</Link>
             </div>
-            <Link to="/blog"> blog</Link>
         </div>
      </aside>   
     )
