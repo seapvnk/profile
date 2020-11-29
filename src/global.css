@@ -117,12 +117,15 @@ main.content {
     overflow: none  ;
     margin-top: 2rem;
   }
+
   .doc h1 {
     font-size: 1.8rem;
   }
+
   .doc h2 {
     font-size: 1.4rem;
   }
+  
   .doc h3 {
     font-size: 1.3rem;
   }
