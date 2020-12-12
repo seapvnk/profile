@@ -12,7 +12,7 @@ function Projects() {
         {
             name: 'Yay',
             description: 'Rede social feita com Laravel',
-            stack: ['Laravel', 'PHP', 'Blade', 'CSS']
+            stack: ['Laravel', 'PHP']
         },
         {
             name: 'Bookmarks',
