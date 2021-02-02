@@ -15,12 +15,12 @@ function Home() {
                 src="https://avatars3.githubusercontent.com/u/36551559?v=4" 
                 alt=""
             />
-            <h1>Pedro Sérgio</h1>
-            <h2>~ desenvolvedor full-stack ☕💻</h2>
+            <h1>Title</h1>
+            <h2>~ subtitle ☕</h2>
             
             <div className="description md">
                 <p>✨ idade: <div className="value">{ age } anos</div></p>
-                <p>✨ e-mail: <div className="value">www.psro@gmail.com</div></p>
+                <p>✨ e-mail: <div className="value">email@gmail.com</div></p>
                 <p>✨ localização: <div className="value">Fortaleza, Ceará</div></p>
             </div>
             
